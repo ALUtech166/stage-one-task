@@ -1,0 +1,36 @@
+/* Default styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row; /* Default to row for large screens */
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.desc {
+    text-align: left;
+
+}
+
+img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .profile {
+        flex-direction: column; /* Change to column for small screens */
+        align-items: flex-start;
+    }
+
+    img {
+        align-self: center; /* Adjust image alignment for small screens */
+    }
+}
